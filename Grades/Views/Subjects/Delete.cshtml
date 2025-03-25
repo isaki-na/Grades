@@ -1,0 +1,12 @@
+﻿@model Subject_
+
+<h2>Detalles del Producto</h2>
+
+<table>
+	<tr><th>Atributo</th><th>Valor</th></tr>
+	<tr><td>ID: </td><td>@Model.id</td></tr>
+	<tr><td>Name: </td><td>@Model.name_</td></tr>
+</table>
+<form asp-action="Delete" method="post">
+	<button type="submit">¿Desea eliminar el item?</button>
+</form>

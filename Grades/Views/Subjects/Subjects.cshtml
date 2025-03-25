@@ -1,0 +1,15 @@
+﻿@model List<Subject_>
+
+<h2>Detalles del Producto</h2>
+
+@foreach (var Subject_ in @Model)
+{
+	<table>
+		<tr><th>Atributo</th><th>Valor</th></tr>
+		<tr><td>ID: </td><td>@Subject_.id</td></tr>
+		<tr><td>Name: </td><td>@Subject_.name_</td></tr>
+	</table>
+
+}
+
+<a href="@Url.Action("Index", "Home")">Volver al inicio</a>
